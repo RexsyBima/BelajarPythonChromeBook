@@ -6,6 +6,6 @@ input_box = PySimpleGUI.InputText(tooltip="enter shopping list")
 add_button = PySimpleGUI.Button("Add")
 
 
-window = PySimpleGUI.Window('My app', layout=[[label], [input_box, add_button]])
+window = PySimpleGUI.Window('My app', layout=[[label, input_box, add_button]])
 window.read()
 window.close()
