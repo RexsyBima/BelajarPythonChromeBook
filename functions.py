@@ -1,4 +1,6 @@
-from datetime import datetime
+shopping_list = []
+price = []
+quantity = []
 
 def append_to_lists(shopping_list, list, price, harga, quantity, quantities):
     shopping_list.append(list)
@@ -23,9 +25,3 @@ def opendata_write(filepath):
         for i, (data,harga,jumlah) in enumerate(zip(shopping_list,price,quantity)):
             file.writelines(f"{str(i+1)}. {data} | harga = {harga} $| jumlah {jumlah} | total biaya item {harga * jumlah} $ \n")
         file.writelines(f"total harga adalah {sum(total_multiplied)} $ \n") 
-        
-        
-        
-shopping_list = []
-price = []
-quantity = []

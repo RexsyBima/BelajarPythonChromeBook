@@ -14,7 +14,5 @@ while True:
     event, values = window.read()
     print(event)
     print(values)
-    match event:
-        case "Add":
-            todos = functions.add_to_lists()
-window.close()
+
+    window.close()
