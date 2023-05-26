@@ -74,7 +74,6 @@ def delete_from_list(shopping_list, price, quantity):
 def main():
     shopping_list, price, quantity = load_data()
     while True:
-        print_today()
         try:
             user_input = int(input("press 1 to add, 2 to save, 3 to show and total cost, 4 to edit, 5 to delete items: "))
             if user_input == 1:
